@@ -147,7 +147,7 @@ body
   color: #8b008b;
 }
 
-#low-btn, #high-btn, #yes-btn
+#low-btn, #high-btn, #yes-btn, #play-below-btn
 {
   padding: 15px 75px;
   border: 0 solid transparent;
@@ -181,6 +181,11 @@ body
 #yes-btn
 {
   background-color: #ff6347;
+}
+
+#play-below-btn
+{
+  background-color: #ff1493;
 }
 
 #steps
