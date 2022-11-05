@@ -8,7 +8,6 @@ function lowF()
   low = mid + 1;
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
-  console.log(mid);
   steps = steps + 1;
   document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
 }
@@ -18,7 +17,6 @@ function highF()
   high = mid - 1;
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
-  console.log(mid);
   steps = steps + 1;
   document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
 }
