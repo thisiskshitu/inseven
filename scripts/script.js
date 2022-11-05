@@ -52,3 +52,13 @@ function restart()
   document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
   document.getElementById("container-last").style.height = "0";
 }
+
+function justChangingVariables()
+{
+  steps = 1;
+  low = 1;
+  high = 100;
+  mid = Math.trunc((low + high) / 2);
+  document.getElementById("number-display").innerHTML = mid + "?";
+  document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
+}
