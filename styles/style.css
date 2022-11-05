@@ -1,0 +1,261 @@
+::-webkit-scrollbar
+{
+  width: 0;
+  background: transparent;
+}
+
+html
+{
+  user-select: none;
+}
+
+body
+{
+  margin: 0;
+  background: rgb(245,247,250);
+  background: linear-gradient(135deg, rgba(245,247,250,1) 0%, rgba(184,198,219,1) 100%);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
+
+#container-first
+{
+  background: rgb(9,32,63);
+  background: linear-gradient(135deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%);
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  transition: 0.3s;
+  text-align: center;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#container-first-inside
+{
+  margin: 30px;
+}
+
+#container-first #first-heading
+{
+  font-size: 25px;
+  line-height: 2px;
+  font-weight: 600;
+}
+
+#container-first #second-heading
+{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#container-first p
+{
+  font-family: Verdana;
+  font-size: 16px;
+}
+
+#top-bar
+{
+  overflow: hidden;
+  background-color: #000;
+}
+
+#top-bar a
+{
+  float: left;
+  cursor: pointer;
+  border: 0px solid transparent;
+  padding: 15px;
+  color: #f5f5f7;
+  font-weight: 600;
+  font-size: 20px;
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Segoe UI", sans-serif;
+}
+
+#top-bar #left-btn
+{
+  float: left;
+  margin-left: 2px;
+}
+
+#top-bar #right-btn
+{
+  float: right;
+  margin-right: 2px;
+}
+
+#play-btn, #play-again-btn
+{
+  cursor: pointer;
+  background-color: deeppink;
+  color: #f5f5f7;
+  font-weight: 600;
+  font-size: 30px;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  font-weight: 700;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#play-btn
+{
+  padding: 12px 50px;
+}
+
+#play-again-btn
+{
+  padding: 15px 25px;
+}
+
+#main-heading, #sub-heading
+{
+  text-align: center;
+}
+
+#main-heading
+{
+  font-size: 20px;
+}
+
+#sub-heading
+{
+  font-size: 15px;
+}
+
+#container
+{
+  text-align: center;
+  margin-top: 50px;
+  /* border: 1px solid red; */
+}
+
+#number-display
+{
+  font-size: 150px;
+  margin: 10px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  color: #8b008b;
+}
+
+#low-btn, #high-btn, #yes-btn
+{
+  padding: 15px 75px;
+  border: 0 solid transparent;
+  border-radius: 15px;
+  font-size: 30px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0 10px 5px -5px #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#low-btn:hover, #high-btn:hover, #yes-btn:hover
+{
+  box-shadow: 0 12px 10px -5px #aaa;
+  transition: 0.3s;
+}
+
+#low-btn
+{
+  background-color: #ffa500;
+}
+
+#high-btn
+{
+  background-color: #3cb371;
+}
+
+#yes-btn
+{
+  background-color: #ff6347;
+}
+
+#steps
+{
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+  color: #333;
+  font-size: 20px;
+  letter-spacing: normal;
+}
+
+#score-display, #steps-display
+{
+  font-family: "Segoe UI", sans-serif;
+  font-weight: 500;
+  color: #f5f5f7;
+  font-size: 75px;
+  margin: 1px;
+  letter-spacing: normal;
+}
+
+#breaked-para
+{
+  font-size: 30px;
+}
+
+#tutorial-para-inside
+{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+}
+
+#container-last
+{
+  background: rgb(9,32,63);
+  background: linear-gradient(135deg, rgba(9,32,63,1) 0%, rgba(83,120,149,1) 100%);
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #23395d;
+  color: #fff;
+  overflow-x: hidden;
+  /* overflow-y: hidden; */
+  transition: 0.3s;
+  text-align: center;
+}
+
+#container-last-inside
+{
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px)
+{
+  #low-btn, #high-btn, #yes-btn
+  {
+    width: 75%;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+
+  #steps
+  {
+    font-size: 20px;
+  }
+
+  #top-bar a
+  {
+    font-size: 20px;
+  }
+}

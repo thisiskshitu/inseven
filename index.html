@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InSeven | Number Guessing in Atmost 7 Steps</title>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+</head>
+<body>
+  <div id="container-first">
+    <div id="container-first-inside">
+      <p id="first-heading">InSeven</p>
+      <p id="second-heading">Number Guessing in 7 steps</p>
+        <div id="tutorial-para">
+          <div id="tutorial-para-inside">
+            <p>
+            Welcome to InSeven. Choose a number form 1 to 100 and the computer
+            will guess your number in atmost 7 steps
+            <br><br>
+            At each step computer will ask you whether your number
+            was this and you have to tell the computer whether his
+            guess was low or high
+            <br><br>
+            For example if your number is 14 and the computer asked
+            whether your number was 50 then press the high button to tell
+            the computer that his guess was higher than your number and 
+            vice versa if for example your number was 70 and the computer
+            guess was 50 then press the low button to tell the computer that
+            his guess was lower than your number
+            <br><br>
+            Press the button Yes! when the computer has guessed your number correctly
+            <br><br>
+            The steps counter is always present below the buttons to show how many
+            steps the computer took to guess your number
+            <br><br>
+            <button id="play-btn" onclick="closeNav()">Play!</button>
+            <br><br>
+            </p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div id="top-bar">
+    <a style="text-decoration: none;" href="https://github.com/thisiskshitu/inseven" id="left-btn">InSeven</a>
+    <a onclick="openNav()" id="right-btn">How to Play?</a>
+  </div>
+  <div id="container">
+    <p id="number-display" style="text-align: center;">50?</p>
+    <button id="low-btn" onclick="lowF()">Low</button>
+    <button id="yes-btn" onclick="found(); scoreDisplay()">Yes!</button>
+    <button id="high-btn" onclick="highF()">High</button>
+    <br>
+    <p id="steps">Steps Taken By Computer: 1</p>
+  </div>
+  <div id="container-last">
+    <div id="container-last-inside">
+      <p id="breaked-para">Your number was:<p id="score-display"></p></p>
+      <p id="breaked-para">Steps taken by the computer:<p id="steps-display"></p></p>
+      <br>
+      <button id="play-again-btn" onclick="restart()">Play Again</button>
+    </div>
+  </div>
+  <script src="scripts/script.js" type="text/javascript"></script>
+</body>
+</html>
