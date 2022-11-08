@@ -73,7 +73,6 @@ function stopSeven()
 {
   let stepsValue = document.getElementById("steps-display-home");
   let stepsValueContent = stepsValue.textContent.trim();
-  console.log(stepsValueContent);
   if(stepsValueContent > 7)
   {
     document.getElementById("container-error").style.height = "100%";
