@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="media/inseven.png" type="image/x-icon">
 </head>
 <body>
+
   <div id="container-first">
     <div id="container-first-inside">
       <p id="first-heading">InSeven</p>
@@ -41,19 +42,22 @@
         </div>
     </div>
   </div>
+
   <div id="top-bar">
     <a style="text-decoration: none;" href="https://github.com/thisiskshitu/inseven" id="left-btn">InSeven</a>
     <a onclick="openNav()" id="right-btn">How to Play?</a>
   </div>
+
   <div id="container">
     <p id="number-display" style="text-align: center;">50?</p>
-    <button id="low-btn" onclick="lowF()">Low</button>
-    <button id="yes-btn" onclick="found(); scoreDisplay()">Yes!</button>
-    <button id="high-btn" onclick="highF()">High</button>
+    <button id="low-btn" onclick="lowF(); stopSeven();">Low</button>
+    <button id="yes-btn" onclick="found(); scoreDisplay();">Yes!</button>
+    <button id="high-btn" onclick="highF(); stopSeven();">High</button>
     <br>
-    <p id="steps">Steps Taken By Computer: 1</p>
+    <p id="steps">Steps Taken By Computer: <span id="steps-display-home"></span></p>
     <button id="play-below-btn" onclick="justChangingVariables()">Restart</button>
   </div>
+
   <div id="container-last">
     <div id="container-last-inside">
       <p id="breaked-para">Your number was:<p id="score-display"></p></p>
@@ -62,6 +66,20 @@
       <button id="play-again-btn" onclick="restart()">Play Again</button>
     </div>
   </div>
+
+  <div id="container-error">
+    <div id="container-error-inside">
+      <p id="emoji">'_'</p>
+      <div id="container-error-para">
+        <p id="error-para-inside">
+        Sorry, the number can always be guessed in a maximum of 7 steps. Please play again properly.
+        </p>
+      </div>
+      <br>
+      <button id="play-again-btn" onclick="restart()">Play Again</button>
+    </div>
+  </div>
+
   <script src="scripts/script.js" type="text/javascript"></script>
 </body>
 </html>

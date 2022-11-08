@@ -9,7 +9,7 @@ function lowF()
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
   steps = steps + 1;
-  document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
+  document.getElementById("steps-display-home").innerHTML = steps;
 }
 
 function highF()
@@ -18,7 +18,7 @@ function highF()
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
   steps = steps + 1;
-  document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
+  document.getElementById("steps-display-home").innerHTML = steps;
 }
 
 function found()
@@ -49,8 +49,9 @@ function restart()
   high = 100;
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
-  document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
+  document.getElementById("steps-display-home").innerHTML = steps;
   document.getElementById("container-last").style.height = "0";
+  document.getElementById("container-error").style.height = "0";
 }
 
 function justChangingVariables()
@@ -60,5 +61,21 @@ function justChangingVariables()
   high = 100;
   mid = Math.trunc((low + high) / 2);
   document.getElementById("number-display").innerHTML = mid + "?";
-  document.getElementById("steps").innerHTML = "Steps Taken By Computer: " + steps;
+  document.getElementById("steps-display-home").innerHTML = steps;
+}
+
+function errorDisplay()
+{
+  document.getElementById("container-error").style.height = "100%";
+}
+
+function stopSeven()
+{
+  let stepsValue = document.getElementById("steps-display-home");
+  let stepsValueContent = stepsValue.textContent.trim();
+  console.log(stepsValueContent);
+  if(stepsValueContent > 7)
+  {
+    document.getElementById("container-error").style.height = "100%";
+  }
 }
